@@ -1,0 +1,77 @@
+gunmetal = #2C2E3D
+pink_raspbery = #92053F
+vivid_crimson = #C80038
+portland_orange = #FF5530
+golden_yellow = #FFE200
+
+@import "https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+@import "default/reset.styl"
+
+html,
+body
+  font-family: Roboto, sans-serif
+  height: 100%
+  font-size: 10px
+
+body
+  background-color: gunmetal
+
+.title
+  padding: 1rem 0
+  color: golden_yellow
+  font-weight: bold
+  font-size: 5rem
+  text-align: center
+
+// CREATE DIV
+
+.container
+  margin: 0 auto
+  max-width: 500px
+  padding: 1rem
+
+.createArea
+  width: 100%
+  height 50px
+  display: flex
+  justify-content: center
+
+#label_add
+  width: 15%
+  background: white
+  color: gunmetal 
+  font-size: 5rem
+  display: flex
+  justify-content: center
+  align-items: center
+  cursor: pointer
+
+#input
+  font-family: Roboto, sans-serif
+  font-size: 2.5rem
+  width: 95%
+  outline: 0
+  border: 0
+
+//list DIV
+.todo__li
+  display: flex
+  margin: 1rem 0
+
+.todo__content
+  width: 90%
+  padding: 1.5rem 1rem
+  font-size: 2.2rem
+  background: white
+  border-top-left-radius: 0.5rem
+  border-bottom-left-radius: 0.5rem
+
+.todo__delete
+  width: 10%
+  background: 0
+  border: 0
+  color: white
+  outline: 0
+  background: portland_orange
+  border-top-right-radius: 0.5rem
+  border-bottom-right-radius: 0.5rem

@@ -1,0 +1,17 @@
+{
+  "name": "dufferent_todo",
+  "version": "1.0.0",
+  "description": "Idk",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp watch && stylus -w style.styl -o style.css"
+  },
+  "author": "Raz",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.5.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-stylus": "^2.7.0",
+    "gulp-watch": "^5.0.1"
+  }
+}
