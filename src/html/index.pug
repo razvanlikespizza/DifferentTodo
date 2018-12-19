@@ -5,13 +5,15 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     link(rel="stylesheet", href="index.css")
+    link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous")
     title Document
   body
     h1.title ToDo List
     h3.subtitle Todo using local storage.
     .container
       .createArea
-        label(id="label_add" for="todo") +
+        label(id="label_add" for="todo")
+          span(class="fas fa-plus-circle")
         input(id="input" type="text" placeholder="Enter data for todo")
       .listArea
         ul#todo_ul

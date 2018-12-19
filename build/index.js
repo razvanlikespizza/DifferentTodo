@@ -39,7 +39,8 @@ function remove() {
 function show(text) {
   li = document.createElement("li");
   li.classList.add("todo__li");
-  li.innerHTML = '<p class="todo__content">' + text + '</p><button class="todo__delete">X</button>';
+  li.innerHTML = '<p class="todo__content"></p><button class="todo__delete"><span class="far fa-trash-alt"></span></button>';
+  li.getElementsByTagName("p")[0].innerText = text;
   li.getElementsByClassName("todo__delete")[0].addEventListener("click", remove);
   ul.appendChild(li);
 };
