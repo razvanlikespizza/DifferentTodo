@@ -8,14 +8,12 @@ html(lang="en")
     title Document
   body
     h1.title ToDo List
+    h3.subtitle Todo using local storage.
     .container
       .createArea
         label(id="label_add" for="todo") +
         input(id="input" type="text" placeholder="Enter data for todo")
       .listArea
-        ul
-          li.todo__li 
-            p.todo__content DSdasdsadsa
-            button.todo__delete X
+        ul#todo_ul
               
-      
+  script(src="index.js")

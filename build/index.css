@@ -138,6 +138,13 @@ body {
   font-size: 5rem;
   text-align: center;
 }
+.subtitle {
+  color: #c80038;
+  opacity: 0.6;
+  font-size: 2rem;
+  text-align: center;
+  font-style: italic;
+}
 .container {
   margin: 0 auto;
   max-width: 500px;

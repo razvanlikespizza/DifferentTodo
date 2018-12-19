@@ -1,6 +1,7 @@
 var gulp = require("gulp"),
     pug = require("gulp-pug"),
-    stylus = require("gulp-stylus");
+    stylus = require("gulp-stylus"),
+    coffee = require("gulp-coffee");
 
 gulp.task("makeHTML", function (){
   console.log("-> making html <-");
@@ -15,10 +16,6 @@ gulp.task("makeCSS", function() {
   .pipe(stylus())
   .pipe(gulp.dest("./build"))
 });
-
-// gulp.task("watch", function() {
-//   gulp.watch("./src/html/*.pug", ["makeHTML"]);
-// });
 
 gulp.task("default", ["makeHTML", "makeCSS"], function(){
   gulp.watch("./src/html/*.pug", ["makeHTML"]);
